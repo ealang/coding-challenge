@@ -12,9 +12,12 @@ The solution works by visiting pairs of items starting from the left and right s
 
 The solution runs in O(n) time, since N pairs of items will be visited in total.
 
+[See implementation](src/FindPair.hs)
+
 ### Run Instructions
 
 To find a match: `cabal run find-pair prices.txt 2500`
+
 To run unit tests: `cabal test find-pair-test`
 
 ## Part 2 (Bonus)
@@ -25,7 +28,10 @@ The solution here is to fix the first item, and let the solution to part 1 pick 
 
 This solution runs in O(n^2) time since all n possible first items are tested, and the part 1 solution is O(n).
 
+[See implementation](src/FindTriplet.hs)
+
 ### Run Instructions
 
 To find a match: `cabal run find-triplet prices.txt 2500`
+
 To run unit tests: `cabal test find-triplet-test`
